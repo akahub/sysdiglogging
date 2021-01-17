@@ -328,7 +328,7 @@ function help {
 	echo ""
 	echo " -g  : Azure resource group where the AKS cluster is located (required)"
 	echo " -c  : AKS cluster name (required)"
-	echo " -n  : Kubernetes namespace where Sysdig agent is deployed (default sysdig-agent)"
+	echo " -n  : Kubernetes namespace where Sysdig agent is deployed (default default)"
     echo " -y  : Do not prompt for confirmation before execution"
 	echo " -h  : print this usage and exit"
 	echo
@@ -343,7 +343,7 @@ function help {
 prompt_yes=1
 resource_group=""
 cluster_name=""
-sysdig_namespace="sysdig-agent"
+sysdig_namespace="default"
 
 # Get and validate all arguments
 while [[ ${#} -gt 0 ]]
